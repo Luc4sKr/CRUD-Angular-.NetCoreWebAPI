@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "CrudAPI.Application.Service/1.0.0": {
+        "dependencies": {
+          "CrudAPI.Domain": "1.0.0"
+        },
         "runtime": {
           "CrudAPI.Application.Service.dll": {}
+        }
+      },
+      "CrudAPI.Domain/1.0.0": {
+        "runtime": {
+          "CrudAPI.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CrudAPI.Application.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrudAPI.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

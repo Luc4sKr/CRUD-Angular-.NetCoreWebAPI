@@ -1,4 +1,8 @@
+using CrudAPI.Application.Service.SQLServerServices;
+using CrudAPI.Domain.Interfaces.IRepositories;
+using CrudAPI.Domain.Interfaces.IServices;
 using CrudAPI.Infra.Data.Repository.Context;
+using CrudAPI.Infra.Data.Repository.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +16,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<SQLServerContext>
     (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
+
+// # Independency Injection
+// Repositories
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+
+// Services
+builder.Services.AddScoped<IPersonService, PersonService>();
 
 var app = builder.Build();
 

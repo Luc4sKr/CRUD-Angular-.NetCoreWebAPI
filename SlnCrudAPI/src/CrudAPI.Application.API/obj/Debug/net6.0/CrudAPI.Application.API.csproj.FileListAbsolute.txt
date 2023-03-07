@@ -89,3 +89,5 @@ D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudA
 D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Application.API\obj\Debug\net6.0\CrudAPI.Application.API.pdb
 D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Application.API\obj\Debug\net6.0\CrudAPI.Application.API.genruntimeconfig.cache
 D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Application.API\obj\Debug\net6.0\ref\CrudAPI.Application.API.dll
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Application.API\bin\Debug\net6.0\CrudAPI.Application.Service.dll
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Application.API\bin\Debug\net6.0\CrudAPI.Application.Service.pdb

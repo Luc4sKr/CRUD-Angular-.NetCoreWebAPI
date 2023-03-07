@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CrudAPI.Application.Service\CrudAPI.Application.Service.csproj" />
     <ProjectReference Include="..\CrudAPI.Domain\CrudAPI.Domain.csproj" />
     <ProjectReference Include="..\CrudAPI.Infra.Data.Repository\CrudAPI.Infra.Data.Repository.csproj" />
   </ItemGroup>

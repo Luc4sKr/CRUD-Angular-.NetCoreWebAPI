@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "CrudAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CrudAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudAPI.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CrudAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CrudAPI.Domain/CrudAPI.Domain.csproj",
+      "msbuildProject": "../CrudAPI.Domain/CrudAPI.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "CrudAPI.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lucas\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

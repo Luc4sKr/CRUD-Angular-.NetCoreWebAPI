@@ -1243,6 +1243,19 @@
           }
         }
       },
+      "CrudAPI.Application.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CrudAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CrudAPI.Application.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudAPI.Application.Service.dll": {}
+        }
+      },
       "CrudAPI.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3739,6 +3752,11 @@
         "version.txt"
       ]
     },
+    "CrudAPI.Application.Service/1.0.0": {
+      "type": "project",
+      "path": "../CrudAPI.Application.Service/CrudAPI.Application.Service.csproj",
+      "msbuildProject": "../CrudAPI.Application.Service/CrudAPI.Application.Service.csproj"
+    },
     "CrudAPI.Domain/1.0.0": {
       "type": "project",
       "path": "../CrudAPI.Domain/CrudAPI.Domain.csproj",
@@ -3752,6 +3770,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CrudAPI.Application.Service >= 1.0.0",
       "CrudAPI.Domain >= 1.0.0",
       "CrudAPI.Infra.Data.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
@@ -3794,6 +3813,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Application.Service\\CrudAPI.Application.Service.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Application.Service\\CrudAPI.Application.Service.csproj"
+            },
             "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj": {
               "projectPath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj"
             },

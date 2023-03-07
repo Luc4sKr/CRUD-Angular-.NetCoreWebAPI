@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6mGVjH/JJ6JbA8MjYP1vQTvWv8Oek4cbzMCWVmoK8IzCACrHeNwi34/4N6Q75XnfkotIfhVwaygXZKOPfMbhvg==",
+  "dgSpecHash": "kEEmTrF7iDx8LLl4RB76Ok+nO0v2rjghA8rJbVKRgQ5Vd1dw6jNerWDrt9R2Ckm68wLDVuISvxBctqnZoyNRAQ==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Application.API\\CrudAPI.Application.API.csproj",
   "expectedPackageFiles": [
