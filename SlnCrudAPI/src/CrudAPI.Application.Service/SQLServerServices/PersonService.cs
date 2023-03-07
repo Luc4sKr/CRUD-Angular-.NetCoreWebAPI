@@ -1,6 +1,7 @@
 ﻿using CrudAPI.Domain.DTO;
 using CrudAPI.Domain.Interfaces.IRepositories;
 using CrudAPI.Domain.Interfaces.IServices;
+using CrudAPI.Domain.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace CrudAPI.Application.Service.SQLServerServices
         public List<PersonDTO> FindAll()
         {
             return _personRepository.FindAll()
-                .Select(persons => new PersonDTO()
+                .Select(persons => new PersonDTO
                 {
                     id = persons.Id,
                     name = persons.Name,
@@ -33,18 +34,17 @@ namespace CrudAPI.Application.Service.SQLServerServices
 
         public async Task<PersonDTO> FindById(int id)
         {
-            PersonDTO dto = new PersonDTO();
-            return dto.MapToDTO(await _personRepository.FindById(id));
+            return Map.PersonMapToDTO(await _personRepository.FindById(id));
         }
 
         public Task<int> Save(PersonDTO entityDTO)
         {
-            return _personRepository.Save(entityDTO.MapToEntity());
+            return _personRepository.Save(Map.PersonMapToEntity(entityDTO));
         }
 
         public Task<int> Update(PersonDTO entityDTO)
         {
-            return _personRepository.Update(entityDTO.MapToEntity());
+            return _personRepository.Update(Map.PersonMapToEntity(entityDTO));
         }
 
         public async Task<int> Delete(int id)

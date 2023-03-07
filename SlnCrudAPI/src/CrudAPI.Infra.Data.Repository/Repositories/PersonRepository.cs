@@ -12,8 +12,6 @@ namespace CrudAPI.Infra.Data.Repository.Repositories
 {
     public class PersonRepository : BaseRepository<Person>, IPersonRepository
     {
-        private readonly SQLServerContext _context;
-
         public PersonRepository(SQLServerContext context) : base(context)
         {
         }
