@@ -1155,6 +1155,16 @@
             "rid": "win"
           }
         }
+      },
+      "CrudAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CrudAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudAPI.Domain.dll": {}
+        }
       }
     }
   },
@@ -3500,10 +3510,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CrudAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CrudAPI.Domain/CrudAPI.Domain.csproj",
+      "msbuildProject": "../CrudAPI.Domain/CrudAPI.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CrudAPI.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.3",
@@ -3542,7 +3558,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

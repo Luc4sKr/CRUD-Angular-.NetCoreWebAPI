@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SmpCRIu1YfUB1dFDAWNU8gsKeV4xu3K4Agpl0HPW7hA=",
+  "Source": "CrudAPI.Application.API",
+  "BasePath": "_content/CrudAPI.Application.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

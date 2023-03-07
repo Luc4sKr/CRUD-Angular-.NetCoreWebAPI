@@ -1,0 +1,12 @@
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\bin\Debug\net6.0\CrudAPI.Domain.deps.json
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\bin\Debug\net6.0\CrudAPI.Domain.dll
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\bin\Debug\net6.0\CrudAPI.Domain.pdb
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.csproj.AssemblyReference.cache
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.AssemblyInfoInputs.cache
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.AssemblyInfo.cs
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.dll
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\refint\CrudAPI.Domain.dll
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\CrudAPI.Domain.pdb
+D:\Projetos\Projetos Integrados\CRUD-Angular-.NetCoreWebAPI\SlnCrudAPI\src\CrudAPI.Domain\obj\Debug\net6.0\ref\CrudAPI.Domain.dll

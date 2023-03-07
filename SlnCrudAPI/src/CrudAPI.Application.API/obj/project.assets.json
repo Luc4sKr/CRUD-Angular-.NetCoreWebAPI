@@ -1242,6 +1242,32 @@
             "rid": "win"
           }
         }
+      },
+      "CrudAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CrudAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudAPI.Domain.dll": {}
+        }
+      },
+      "CrudAPI.Infra.Data.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CrudAPI.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
+        },
+        "compile": {
+          "bin/placeholder/CrudAPI.Infra.Data.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudAPI.Infra.Data.Repository.dll": {}
+        }
       }
     }
   },
@@ -3712,10 +3738,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CrudAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CrudAPI.Domain/CrudAPI.Domain.csproj",
+      "msbuildProject": "../CrudAPI.Domain/CrudAPI.Domain.csproj"
+    },
+    "CrudAPI.Infra.Data.Repository/1.0.0": {
+      "type": "project",
+      "path": "../CrudAPI.Infra.Data.Repository/CrudAPI.Infra.Data.Repository.csproj",
+      "msbuildProject": "../CrudAPI.Infra.Data.Repository/CrudAPI.Infra.Data.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CrudAPI.Domain >= 1.0.0",
+      "CrudAPI.Infra.Data.Repository >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.3",
@@ -3755,7 +3793,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Domain\\CrudAPI.Domain.csproj"
+            },
+            "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Infra.Data.Repository\\CrudAPI.Infra.Data.Repository.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos Integrados\\CRUD-Angular-.NetCoreWebAPI\\SlnCrudAPI\\src\\CrudAPI.Infra.Data.Repository\\CrudAPI.Infra.Data.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
