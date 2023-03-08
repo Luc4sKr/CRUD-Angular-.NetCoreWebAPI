@@ -53,16 +53,20 @@ namespace CrudAPI.Application.API.Controllers
 
         // PUT api/<PersonController>/5
         [HttpPut("{id}")]
-        public void Put(PersonDTO person)
+        public async Task<ActionResult> Put(PersonDTO person)
         {
-            _personService.Update(person);
+            await _personService.Update(person);
+
+            return Ok();
         }
 
         // DELETE api/<PersonController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            _personService.Delete(id);
+            await _personService.Delete(id);
+
+            return Ok();
         }
     }
 }

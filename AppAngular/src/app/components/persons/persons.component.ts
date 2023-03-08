@@ -39,6 +39,23 @@ export class PersonsComponent implements OnInit {
     });
   }
 
+  displayUpdateForm(id: number): void {
+    this.tableVisibility = false;
+    this.formVisibility = true;
+
+    this.personsService.getById(id).subscribe(result => {
+      this.formTitle = `Update ${result.name} ${result.lastName}`;
+
+      this.form = new FormGroup({
+        id: new FormControl(result.id),
+        name: new FormControl(result.name),
+        lastName: new FormControl(result.lastName),
+        age: new FormControl(result.age),
+        occupation: new FormControl(result.occupation)
+      });
+    });;
+  }
+
   back(): void {
     this.tableVisibility = true;
     this.formVisibility = false;
@@ -47,15 +64,31 @@ export class PersonsComponent implements OnInit {
   submitForm(): void {
     const person: Person = this.form.value;
 
-    this.personsService.save(person).subscribe(result => {
-      this.formVisibility = false;
-      this.tableVisibility = true;
+    if (person.id > 0) {
 
-      alert("success");
+      console.log(person.name)
 
-      this.personsService.getAll().subscribe(newResult => {
-        this.persons = newResult;
-      })
-    });
+      this.personsService.update(person).subscribe(result => {
+        this.formVisibility = false;
+        this.tableVisibility = true;
+
+        alert("success");
+
+        this.personsService.getAll().subscribe(newResult => {
+          this.persons = newResult;
+        });
+      });
+    } else {
+      this.personsService.save(person).subscribe(result => {
+        this.formVisibility = false;
+        this.tableVisibility = true;
+
+        alert("success");
+
+        this.personsService.getAll().subscribe(newResult => {
+          this.persons = newResult;
+        });
+      });
+    }
   }
 }

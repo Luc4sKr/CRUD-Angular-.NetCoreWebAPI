@@ -31,7 +31,8 @@ export class PersonsService {
   }
 
   update(person: Person): Observable<any> {
-    return this.http.put<Person>(this.url, person, httpOptions);
+    const urlAPI = `${this.url}/${person.id}`;
+    return this.http.put<Person>(urlAPI, person, httpOptions);
   }
 
   delete(id: number): Observable<any> {

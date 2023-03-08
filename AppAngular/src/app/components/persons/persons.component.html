@@ -19,7 +19,7 @@
         <td>{{ p.age }}</td>
         <td>{{ p.occupation }}</td>
         <td>
-          <button type="button" class="btn btn-sm btn-outline-info">Update</button>
+          <button type="button" class="btn btn-sm btn-outline-info" (click)="displayUpdateForm(p.id)">Update</button>
           <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
         </td>
       </tr>
