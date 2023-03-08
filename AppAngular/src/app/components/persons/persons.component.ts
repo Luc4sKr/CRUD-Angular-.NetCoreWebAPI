@@ -13,12 +13,24 @@ export class PersonsComponent implements OnInit {
 
   form: any;
   formTitle?: string;
+  persons?: Person[];
+
+  tableVisibility: boolean = true;
+  formVisibility: boolean = false;
 
   constructor(private personsService: PersonsService) { }
 
   ngOnInit(): void {
-    this.formTitle = "New Person";
+    this.personsService.getAll().subscribe(result => {
+      this.persons = result;
+    });
+  }
 
+  displayRegistrationForm(): void {
+    this.tableVisibility = false;
+    this.formVisibility = true;
+
+    this.formTitle = "New Person";
     this.form = new FormGroup({
       name: new FormControl(null),
       lastName: new FormControl(null),
@@ -27,11 +39,23 @@ export class PersonsComponent implements OnInit {
     });
   }
 
+  back(): void {
+    this.tableVisibility = true;
+    this.formVisibility = false;
+  }
+
   submitForm(): void {
     const person: Person = this.form.value;
 
     this.personsService.save(person).subscribe(result => {
+      this.formVisibility = false;
+      this.tableVisibility = true;
+
       alert("success");
+
+      this.personsService.getAll().subscribe(newResult => {
+        this.persons = newResult;
+      })
     });
   }
 }

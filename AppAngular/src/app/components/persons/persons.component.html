@@ -1,4 +1,35 @@
-<div class="container p-5">
+<div class="container p-5" *ngIf="tableVisibility">
+  <div class="border border-dark rounded p-5">
+    <button type="button" class="btn btn-sm btn-secondary" (click)="displayRegistrationForm()">New Person</button>
+    <hr>
+
+
+    <table class="table taable-striped table-hover" *ngIf="persons">
+      <tr class="thead-light">
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Occupation</th>
+        <th>Actions</th>
+      </tr>
+
+      <tr *ngFor="let p of persons">
+        <td>{{ p.name }}</td>
+        <td>{{ p.lastName }}</td>
+        <td>{{ p.age }}</td>
+        <td>{{ p.occupation }}</td>
+        <td>
+          <button type="button" class="btn btn-sm btn-outline-info">Update</button>
+          <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="container p-5" *ngIf="formVisibility">
   <div class="row">
     <div class="col-6 border border-light rounded p-5 shadow" *ngIf="form">
       <h6>{{ formTitle }}</h6>
@@ -25,7 +56,7 @@
         <div class="container">
           <div class="row">
             <button type="submit" class="btn btn-sm btn-outline-secondary">Save</button>
-            <button type="button" class="btn btn-sm btn-light">Back</button>
+            <button type="button" class="btn btn-sm btn-light" (click)="back()">Back</button>
           </div>
         </div>
       </form>
