@@ -1,8 +1,8 @@
-import { PersonsService } from './../../services/persons.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms'
 
 import { Person } from 'src/app/models/person';
+import { PersonsService } from './../../services/persons.service';
 
 @Component({
   selector: 'app-persons',
@@ -61,34 +61,5 @@ export class PersonsComponent implements OnInit {
     this.formVisibility = false;
   }
 
-  submitForm(): void {
-    const person: Person = this.form.value;
 
-    if (person.id > 0) {
-
-      console.log(person.name)
-
-      this.personsService.update(person).subscribe(result => {
-        this.formVisibility = false;
-        this.tableVisibility = true;
-
-        alert("success");
-
-        this.personsService.getAll().subscribe(newResult => {
-          this.persons = newResult;
-        });
-      });
-    } else {
-      this.personsService.save(person).subscribe(result => {
-        this.formVisibility = false;
-        this.tableVisibility = true;
-
-        alert("success");
-
-        this.personsService.getAll().subscribe(newResult => {
-          this.persons = newResult;
-        });
-      });
-    }
-  }
 }

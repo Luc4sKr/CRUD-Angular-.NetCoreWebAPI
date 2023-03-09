@@ -10,11 +10,13 @@ import { AppComponent } from './app.component';
 
 import { PersonsService } from './services/persons.service';
 import { PersonsComponent } from './components/persons/persons.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonsComponent
+    PersonsComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
